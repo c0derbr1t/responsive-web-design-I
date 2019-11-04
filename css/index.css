@@ -241,6 +241,10 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
+    address {
+        height: 100px;
+    }
 }
 
 /* Mobile */
@@ -269,7 +273,7 @@ footer {
     }
 
     .logo {
-        width: 50%;
+        width: 40%;
         margin-top: 5%;
     }
 
@@ -284,8 +288,8 @@ footer {
     #headerButton {
         font-size: 0.7em;
         border: 0.8px solid #141a15;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 35%;
+        margin-right: 35%;
         line-height: 1.5;
     }
 
