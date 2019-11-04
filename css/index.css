@@ -81,9 +81,14 @@ body {
 	flex-wrap: nowrap;
 	align-items: center;
     justify-content: space-between;
-    margin-left: 2.5%;
 }
 
+.navLinks {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 8%;
+}
 a {
 	color: darkgray;
 	text-decoration: none;
@@ -95,7 +100,7 @@ a {
 }
 
 .logo {
-    margin-left: 2%;
+    width: 25%;
 }
 
 /* Style the header */
@@ -209,6 +214,32 @@ footer {
 	justify-content: center;
 	margin-top: 8%;
 	margin-bottom: 8%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:800px){
+    .navigation {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .navLinks {
+        margin: 5% 0;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    #imgTitle {
+        display: none;
+    }
+
+    #headerSection {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
