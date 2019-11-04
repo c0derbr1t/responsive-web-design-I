@@ -1,3 +1,214 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/* border: 1px solid lightgreen; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+html {
+	box-sizing: border-box;
+    margin: 50px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+    width: 100%;
+
+}
+
+/* ***STYLE HOME PAGE*** */
+
+
+/* Style the nav bar */
+.navigation {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+    justify-content: space-between;
+    margin-left: 2.5%;
+}
+
+a {
+	color: darkgray;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+.navItem:hover {
+	font-weight: bolder;
+}
+
+.logo {
+    margin-left: 2%;
+}
+
+/* Style the header */
+header {
+	text-align: center;
+}
+
+.headContainer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 6% 0 10%;
+}
+
+.title h1 {
+    font-size: 11vh;
+}
+
+.title {
+    width: 100%;
+    margin-right: -11%;
+}
+
+#headerImage {
+    width: 63%;
+    height: auto;
+}
+
+#headerButton {
+	font-size: 1.1em;
+	border: 1px solid #141a15;
+	margin-left: 38%;
+	margin-right: 38%;
+	line-height: 1.5;
+
+}
+#headerButton a {
+	text-decoration: none;
+	color: #141a15;
+}
+
+/* Style the first section */
+hr {
+	border: 1px solid black;
+	background: black;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#doubleSection {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4%;
+}
+
+.twin {
+	width: 49%;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+p {
+	font-size: 1.1em;
+	color: #141a15;
+}
+
+.navSec {
+	/* text-decoration: none; */
+	color: black;
+}
+
+.navSec:hover {
+	font-weight: bolder;
+}
+
+/* Style the middle image */
+.middle-img {
+	width: 100%;
+	margin-top: 3.5%;
+	margin-bottom: 3.5%;
+}
+
+/* Style the bottom section */
+#tripleSection {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4%;
+}
+
+.triplet {
+	width: 32%;
+}
+
+/* Style the contact section */
+#contactSection {
+	margin-top: 4%;
+}
+
+address {
+	height: 115px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Style the footer */
+footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+
 
