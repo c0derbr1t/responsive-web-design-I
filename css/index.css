@@ -1,3 +1,515 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/* border: 1px solid lightgreen; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+html {
+	box-sizing: border-box;
+    margin: 50px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+    width: 100%;
+
+}
+
+/* ***STYLE HOME PAGE*** */
+
+
+/* Style the nav bar */
+.navigation {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+    justify-content: space-between;
+}
+
+.navLinks {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 8%;
+}
+a {
+	color: darkgray;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+.navItem:hover {
+	font-weight: bolder;
+}
+
+.logo {
+    width: 25%;
+}
+
+/* Style the header */
+header {
+	text-align: center;
+}
+
+.headContainer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 6% 0 10%;
+}
+
+.title h1 {
+    font-size: 4.5em;
+}
+
+.title {
+    width: 100%;
+    margin-right: -11%;
+}
+
+#headerImage {
+    width: 63%;
+    height: auto;
+}
+
+#headerButton {
+	font-size: 1.1em;
+	border: 1px solid #141a15;
+	margin-left: 38%;
+	margin-right: 38%;
+	line-height: 1.5;
+}
+
+#headerButton a {
+	text-decoration: none;
+	color: #141a15;
+}
+
+/* Style the first section */
+hr {
+	border: 1px solid black;
+	background: black;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#doubleSection {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4%;
+}
+
+.twin {
+	width: 49%;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+p {
+	font-size: 1.1em;
+	color: #141a15;
+}
+
+.navSec {
+	/* text-decoration: none; */
+	color: black;
+}
+
+.navSec:hover {
+	font-weight: bolder;
+}
+
+/* Style the middle image */
+.middle-img {
+	width: 100%;
+	margin-top: 3.5%;
+	margin-bottom: 3.5%;
+}
+
+/* Style the bottom section */
+#tripleSection {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4%;
+}
+
+.triplet {
+	width: 32%;
+}
+
+/* Style the contact section */
+#contactSection {
+	margin-top: 4%;
+}
+
+address {
+	height: 115px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Style the footer */
+footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+
+/* ***STYLE SERVICES PAGE*** */
+
+/* Style the services image */
+.services-header-img {
+	width: 100%;
+	margin: 2.75% 0;
+}
+
+/* Style introduction */
+.intro {
+	margin-bottom: 5%;
+}
+.intro h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.intro p{
+	font-size: 1.1em;
+}
+
+/* Style main content */
+.serviceBoxes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+	margin-top: 5%;
+}
+
+.box {
+	padding: 2%;
+	border: 1px solid black;
+	background: #f4f3f4;
+	width: 47.75%;
+	margin-bottom: 4%;
+}
+
+.learnButton {
+	font-size: 0.95em;
+	color: #141a15;
+	background: #ffffff;
+	border: 1px solid black;
+	border-radius: 3px;
+	line-height: 2.5;
+	width: 40%;
+	margin-top: 4%;
+	text-align: center;
+}
+
+.facts {
+	margin-top: 5%;
+	margin-bottom: 10%;
+	width; 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.factBox {
+	width: 45%;
+}
+
+.services-info-img {
+	width: 48%;
+}
+
+ul {
+	margin-top: 3%;
+	font-size: 1.1em;
+	color: #141a15;
+	list-style-type: square;
+	list-style-position: inside;
+	line-height: 2;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+@media (max-width:800px){
+    html {
+        margin: 25px;
+    }
+
+    .navigation {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .navLinks {
+        margin: 5% 0;
+    }
+
+    .navLinks a {
+        font-size: 0.95em;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    #imgTitle {
+        display: none;
+    }
+
+    #headerSection {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-header-img {
+        margin-bottom: 10%;
+    }
+
+    .intro h1 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+
+    h3 {
+        font-size: 0.95em;
+        margin-bottom: 5%;
+    }
+    
+    p {
+        font-size: 0.95em;
+        color: #141a15;
+    }
+
+    .learnButton {
+        font-size: 0.8em;
+        line-height: 2;
+    }
+
+    .factBox {
+        width: 100%;
+    }
+
+    .services-info-img {
+        display: none;
+    }
+
+    ul {
+        margin-top: 2%;
+        font-size: 0.88em;
+        line-height: 1.75;
+    }
+
+    address {
+        height: 100px;
+    }
+
+    footer p {
+        font-size: 0.75em;
+    }
+}
+
+/* Mobile */
+@media (max-width:500px){
+    html {
+        margin: 0px;
+    }
+
+    main {
+        margin: 5%;
+    }
+
+    .navLinks {
+        flex-direction: column;
+    }
+
+    .navLinks a {
+        border-bottom: .5px solid gray;
+        width: 100%;
+        font-size: 0.8em;
+        line-height: 3;
+    }
+
+    .navLinks:first-child {
+        border-top: .5px solid gray;
+    }
+
+    .logo {
+        width: 40%;
+        margin-top: 5%;
+    }
+
+    .title {
+        margin-bottom: 5%;
+    }
+
+    .title h1 {
+        font-size: 3em;
+    }
+
+    #headerButton {
+        font-size: 0.7em;
+        border: 0.8px solid #141a15;
+        margin-left: 35%;
+        margin-right: 35%;
+        line-height: 1.5;
+    }
+
+    hr {
+        border: .75px solid black;
+        background: black;
+    }
+
+    #doubleSection {
+        flex-direction: column;
+        margin: 15% 0 5%;
+    }
+
+    .twin {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    h3 {
+        font-size: 0.75em;
+        margin-bottom: 5%;
+    }
+    
+    p {
+        font-size: 0.75em;
+        color: #141a15;
+    }
+
+    .middle-img {
+        margin: 0 0 10%;
+    }
+
+    #tripleSection {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .triplet {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .services-header-img {
+        margin-bottom: 2.5%;
+    }
+
+    .intro {
+        margin-bottom: 7.5%;
+    }
+
+    .intro h1 {
+        font-size: 1.1em;
+    }
+
+    .intro p {
+        font-size: 0.85em;
+    }
+
+    .serviceBoxes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .learnButton {
+        font-size: 0.65em;
+        line-height: 2;
+        width: 30%;
+    }
+
+    #contactSection {
+        margin-top: 12%;
+    }
+
+    ul {
+        margin-top: 2%;
+        font-size: 0.7em;
+        line-height: 1.5;
+    }
+
+    address {
+        height: 75px;
+    }
+
+    footer p {
+        font-size: 0.6em;
+    }
+}
 
