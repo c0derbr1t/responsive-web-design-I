@@ -216,10 +216,91 @@ footer {
 	margin-bottom: 8%;
 }
 
+/* ***STYLE SERVICES PAGE*** */
+
+/* Style the services image */
+.services-header-img {
+	width: 100%;
+	margin: 2.75% 0;
+}
+
+/* Style introduction */
+.intro {
+	margin-bottom: 5%;
+}
+.intro h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.intro p{
+	font-size: 1.1em;
+}
+
+/* Style main content */
+.serviceBoxes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+	margin-top: 5%;
+}
+
+.box {
+	padding: 2%;
+	border: 1px solid black;
+	background: #f4f3f4;
+	width: 47.75%;
+	margin-bottom: 4%;
+}
+
+.learnButton {
+	font-size: 0.95em;
+	color: #141a15;
+	background: #ffffff;
+	border: 1px solid black;
+	border-radius: 3px;
+	line-height: 2.5;
+	width: 40%;
+	margin-top: 4%;
+	text-align: center;
+}
+
+.facts {
+	margin-top: 5%;
+	margin-bottom: 10%;
+	width; 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.factBox {
+	width: 45%;
+}
+
+.services-info-img {
+	width: 48%;
+}
+
+ul {
+	margin-top: 3%;
+	font-size: 1.1em;
+	color: #141a15;
+	list-style-type: square;
+	list-style-position: inside;
+	line-height: 2;
+}
+
+
 /* MEDIA QUERIES */
 
 /* Tablet */
 @media (max-width:800px){
+    html {
+        margin: 25px;
+    }
+
     .navigation {
         flex-direction: column-reverse;
         justify-content: center;
@@ -227,6 +308,10 @@ footer {
 
     .navLinks {
         margin: 5% 0;
+    }
+
+    .navLinks a {
+        font-size: 0.95em;
     }
 
     .title {
@@ -242,8 +327,53 @@ footer {
         align-items: center;
     }
 
+    .services-header-img {
+        margin-bottom: 10%;
+    }
+
+    .intro h1 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+
+    h3 {
+        font-size: 0.95em;
+        margin-bottom: 5%;
+    }
+    
+    p {
+        font-size: 0.95em;
+        color: #141a15;
+    }
+
+    .learnButton {
+        font-size: 0.8em;
+        line-height: 2;
+    }
+
+    .factBox {
+        width: 100%;
+    }
+
+    .services-info-img {
+        display: none;
+    }
+
+    ul {
+        margin-top: 2%;
+        font-size: 0.88em;
+        line-height: 1.75;
+    }
+
     address {
         height: 100px;
+    }
+
+    footer p {
+        font-size: 0.75em;
     }
 }
 
@@ -332,12 +462,54 @@ footer {
         margin-bottom: 10%;
     }
 
+    .services-header-img {
+        margin-bottom: 2.5%;
+    }
+
+    .intro {
+        margin-bottom: 7.5%;
+    }
+
+    .intro h1 {
+        font-size: 1.1em;
+    }
+
+    .intro p {
+        font-size: 0.85em;
+    }
+
+    .serviceBoxes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .learnButton {
+        font-size: 0.65em;
+        line-height: 2;
+        width: 30%;
+    }
+
     #contactSection {
         margin-top: 12%;
     }
 
+    ul {
+        margin-top: 2%;
+        font-size: 0.7em;
+        line-height: 1.5;
+    }
+
     address {
         height: 75px;
+    }
+
+    footer p {
+        font-size: 0.6em;
     }
 }
 
